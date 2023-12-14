@@ -13,6 +13,10 @@ cursor = db.cursor()
 def home():
    return render_template('index.html')
 
+@app.route('/introduce')
+def introduce():
+   return render_template('introduce.html')
+
 @app.route('/map')
 def kakaoMap():
    return render_template('map.html')
@@ -21,7 +25,8 @@ def kakaoMap():
 def tryLogin():
    if request.method == 'POST' :
       result = request.form
-      sql = "select id from login where id == "
+      sql = "select id from login where id == " + result.name
+      db.query(sql)
    return render_template('index.html')
 
 if __name__ == '__main__':  
