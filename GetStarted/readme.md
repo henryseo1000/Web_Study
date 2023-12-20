@@ -71,7 +71,7 @@
 |:----:|:----:|:----:|
 |abbr|줄임말을 표시하고 title 속성을 함께 사용할 수 있습니다.|<abbr title="Internet Of Things">IOT</abbr>|
 |cite|웹 문서나 포스트에서 참고 내용을 표시합니다.|<cite>아이유 - 팔레트</cite>|
-|code|컴퓨터 인식을 위한 소스코드입니다.|<code>function()</code>|
+|code|컴퓨터 인식을 위한 소스코드입니다.|<code>void function(){}</code>|
 |small|부가 정보처럼 작게 표시해도 되는 텍스트입니다.|<small>작은 글자</small>|
 |sup|아래 첨자를 표시합니다.|H<sub>2</sub>O|
 |sup|위 첨자를 표시합니다.|E = mc<sup>2</sup>|
