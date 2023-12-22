@@ -1,20 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- layout 사용을 위한 link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./codemirror-5.65.16/lib/codemirror.css">
+  <link rel="stylesheet" href="./codemirror-5.65.16/theme/midnight.css">
+  <link rel="stylesheet" href="./codemirror-5.65.16/addon/edit/closebrackets.js">
+
+  <!-- icon 사용을 위한 link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <script src="./codemirror-5.65.16/lib/codemirror.js"></script>
+  <script src="./codemirror-5.65.16/mode/clike/clike.js"></script>
 </head>
+
 <body>
-    <div class="mb-3">
-        <label for="formGroupExampleInput" class="form-label">Example label</label>
-        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+  <!-- m-3는 margin의 약자 -->
+  <div class="row m-3">
+    <div class="col">
+      <div class="d-flex justify-content-between">
+          <div class="col-12 w-25">
+            <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
+            <select class="form-select" id="inlineFormSelectPref">
+              <option selected>Choose Your Language</option>
+              <option value="Java">Java</option>
+              <option value="C++">C++</option>
+              <option value="Python">Python</option>
+            </select>
+          </div>
+          <div>
+            <button type="button" class="btn btn-primary">Coding Sprint</button>
+            <button type="button" class="btn btn-primary"><i class="bi bi-play-circle-fill"></i></button>
+          </div>
       </div>
-      <div class="mb-3">
-        <label for="formGroupExampleInput2" class="form-label">Another label</label>
-        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+      <textarea type="text" id="editor" class="form-control" aria-label="First name"></textarea>
+    </div>
+
+    <div class="col d-flex flex-column rounded bg-dark px-4">
+      <div class="h-50">
+        <label for="Input" class="text-light">Input</label>
+        <textarea type="text" class="form-control" aria-label="Last name"></textarea>
       </div>
+
+      <!-- h-50은 높이를 50%로 설정하겠다는 뜻이다. -->
+      <div class="h-50">
+        <!-- bootstrap에서는 class = "text-light"로 글자를 흰색으로 만들 수 있다. -->
+        <label for="Output" class="text-light">Output</label>
+        <textarea type="text" class="form-control" aria-label="Last name"></textarea>
+      </div>
+    </div>
+  </div>
 </body>
+
+<!-- mode:https://codemirror.net/5/mode/clike/ -->
+<script>
+  var editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
+    mode : "text/x-c++src",
+    theme : "midnight",
+    lineNumbers : true,
+    autoCloseBrackets: true
+  })
+  var width = window.innerWidth
+  editor.setSize(0.7 * width)
+</script>
 </html>
