@@ -4,10 +4,13 @@
 1. <a href="https://opentutorials.org/course/1">생활 코딩</a>
 2. <a href="https://m.yes24.com/Goods/Detail/96674934">Do it! HTML+CSS+자바스크립트 웹 표준의 정석</a>
 <br>
-<img src="https://image.yes24.com/goods/96674934/XL" style="height: 200px;">
 
-## <a href="https://github.com/henryseo1000/Web_Study/tree/main/GetStarted">GetStarted - 책으로 HTML 복습하기(HTML의 기초)</a>
+<center>
+  <img src="https://github.com/henryseo1000/Web_Study/assets/81693499/e34f9507-8381-411e-860e-d4c60dd7ba8a" style="height: 400px;">
+  <img src="https://github.com/henryseo1000/Web_Study/assets/81693499/2808e8e3-85cd-417c-ae5f-eabca6f06446" style="height: 400px;">
+</center>
 
-## <a href="https://github.com/henryseo1000/Web_Study/tree/main/SimpleLogin">Simple Login - 반응형 로그인 화면 클론코딩</a>
-
-## <a href="https://github.com/henryseo1000/Web_Study/tree/main/WebCompiler">WebCompiler - 웹을 이용한 컴파일 페이지</a>
+## 🔖 스터디 리스트
+- <a href="https://github.com/henryseo1000/Web_Study/tree/main/GetStarted">GetStarted - 책으로 HTML 복습하기(HTML의 기초)</a>
+- <a href="https://github.com/henryseo1000/Web_Study/tree/main/SimpleLogin">Simple Login - 반응형 로그인 화면 클론코딩</a>
+- <a href="https://github.com/henryseo1000/Web_Study/tree/main/WebCompiler">WebCompiler - 웹을 이용한 컴파일 페이지</a>
