@@ -13,6 +13,10 @@ app.get("/", function(req, res){
     res.sendFile("/Users/seohojun/Desktop/Study/Web_Study/WebCompiler/index.html")
 })
 
+app.get("/img", function(req, res){
+    res.sendFile("/Users/seohojun/Desktop/Study/Web_Study/WebCompiler/img/favicon.ico")
+})
+
 app.post("/compile", function(req, res){
     var code = req.body.code
     var input = req.body.input
