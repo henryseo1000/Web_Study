@@ -1,8 +1,9 @@
 # :computer: Web_Study
 > HTML과 flask를 중점적으로 웹에 대해 공부하고 정리합니다. 재미있어 보이는 프로젝트라면 그냥 이유 없이 해보고 올릴 수도 있습니다.
 ## :book: 주로 참고한 자료
-1. <a href="https://opentutorials.org/course/1">생활 코딩</a>
-2. <a href="https://m.yes24.com/Goods/Detail/96674934">Do it! HTML+CSS+자바스크립트 웹 표준의 정석</a>
+1. <a href="https://opentutorials.org/course/1"><strong>생활 코딩</strong></a>
+2. <a href="https://m.yes24.com/Goods/Detail/96674934"><strong>Do it! HTML+CSS+자바스크립트 웹 표준의 정석</strong></a>
+3. <a href="https://product.kyobobook.co.kr/detail/S000001792476"><strong>스프링 부트 프로그래밍 입문</strong></a>
 <br>
 
 <center>
