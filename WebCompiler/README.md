@@ -15,9 +15,9 @@
 ~~~shell
 % npm init
 ~~~
-2. express, body-paser, compilex, nodemon 패키지를 설치
+2. express, body-paser, request, nodemon 패키지를 설치
 ~~~shell
-% npm install -g express body-parser compilex nodemon
+% npm install -g express body-parser request nodemon
 ~~~
 3. 실행 시
 ~~~shell
@@ -34,9 +34,12 @@ app.use("/codemirror-5.65.16", express.static("[현재 프로젝트에 설치된
 app.get("/", function(req, res){
     res.sendFile("[index.html 절대 경로]")
 })
+app.get("/img", function(req, res){
+    res.sendFile("[img 디렉토리 속의 favicon.ico 절대 경로]")
+})
 ~~~
 
 ## 실행 화면 : 현재 코드상 8000포트로 실행
 <center>
-![image](https://github.com/henryseo1000/Web_Study/assets/81693499/6579fbf4-f13d-42cf-ac71-460cbff055f9)
+<img src="https://github.com/henryseo1000/Web_Study/assets/81693499/6579fbf4-f13d-42cf-ac71-460cbff055f9">
 </center>
