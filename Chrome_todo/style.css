@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+  font-family: 'Bebas-Neue';
+  font-weight: 400;
+  padding: 0;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  /* box-shadow: 5px 5px 5px gray;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px; */
+}
+
+#input_task{
+  margin-bottom: 10px;
+  padding-left: 5px;
+  height: 25px;
+  border-radius: 10px;
+  border-color: transparent;
+  background-color: #f1f1f1;
+  margin: 10px;
+}
+
+#add{
+  border-radius: 10px;
+  border-color: transparent;
+  background-color: #343f9f;
+  color:#f1f1f1;
+  font-weight: 700;
+  height: 30px;
+  margin: 10px;
+}
+
+#add:hover{
+  transition-duration: 200ms;
+  background-color: #515bbb;
+}
+
+#list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+
+#list span{
+  width: 150px;
+  display: flex;
+  align-items: center;
+}
+
+#list li{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-items: center;
+  color: white;
+  background-color: gray;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  word-break: break-all;
+  overflow: hidden;
+}
+
+#list #button_container{
+  display: flex;
+  align-items: center;
+}
+
+#list #button_container button{
+  width: 45px;
+  height: 25px;
+  border-radius: 5px;
+  border-color: transparent;
+  background-color: #ffffff;
+  margin-right: 5px;
+}
+
+#list #button_container button:hover{
+  cursor: pointer;
+}
