@@ -8,6 +8,10 @@ file_list = os.listdir(path);
 
 # print ("file_list: {}".format(file_list));
 
+@app.route("/")
+def index():
+    return render_template("index.html");
+
 @app.route("/<string:path>")
 def route(path):
     return render_template("/" + path + "/index.html");
