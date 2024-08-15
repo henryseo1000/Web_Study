@@ -20,6 +20,27 @@
 4. `PR`을 올릴 경우, `Label과` `Assignee` 등을 붙입니다. 최대한 자세하게 어떤 기능을 구현했는지 작성합니다.
 5. 새로운 프로젝트가 생성되면, 반드시 해당 프로젝트 속의 `md 파일과 스터디 리스트를 업데이트`합니다.
 
+## 프로젝트 루트의 폴더 실행
+> 로직 : 프로젝트 루트 폴더의 server.py를 실행시킨 후 경로를 주면, 해당 경로의 이름에 해당하는 templates 폴더에 가서 index.html을 실행시킵니다.
+
+현재, 몇몇 프로젝트들은 정상적으로 서버에서 실행할 수 없게 되어 있습니다 - 확장 프로그램, 예전에 했던 flask 테스트를 위해 폴더에 app.py가 들어있는 경우
+
+그 외에는 아래의 과정으로 활용할 수 있습니다.
+
+1. `server.py` 실행
+2. sh 파일들 권한 주기
+```shell
+sudo chmod +x clean.sh make.sh scss.sh
+```
+3. 프로젝트 루트 폴더에서 새 프로젝트 생성 - `HTML`은 `templates`에, `CSS`와 `JS`는 `static`에 들어있음
+```shell
+./make.sh [프로젝트 이름]
+```
+4. 프로젝트에서 scss.sh를 활용하고 싶은 경우 - static의 프로젝트 폴더에 style.scss 생성 후 아래 명령어 실행
+```shell
+./scss.sh [프로젝트 이름]
+```
+
 ## 🔖 스터디 리스트
 - <a href="https://github.com/henryseo1000/Web_Study/tree/main/templates/get_started">GetStarted - 책으로 HTML 복습하기(HTML의 기초)</a>
 - <a href="https://github.com/henryseo1000/Web_Study/tree/main/templates/simple_login">Simple Login - 반응형 로그인 화면 클론코딩</a>
