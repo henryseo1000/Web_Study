@@ -1,18 +1,10 @@
 #!/bin/zsh
 
-mkdir $1
-cd $PWD/$1/
+mkdir templates/$1
+mkdir static/$1
 
-touch readme.md
+touch static/$1/style.css static/$1/script.js
 
-mkdir static
-mkdir templates
+cd $PWD/templates/$1
 
-cd templates
-touch index.html
-
-cd ../static
-mkdir style
-
-cd style
-touch style.css
+touch readme.md index.html
