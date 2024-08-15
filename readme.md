@@ -14,16 +14,17 @@
 
 ## :smile: 컨벤션 규칙
 > 2024 / 08 / 15 이후로 아래 컨벤션 규칙들을 적용합니다.
-1. 폴더 이름과 md 파일들은 모두 소문자로 작성하고, 사이에 "_" 기호를 넣습니다.
-2. 모든 html 파일들은 최대한 server.py 파일에서 접근 가능하고, Web_Study의 index.html 파일에서 이동하여 실행할 수 있도록 해볼 예정입니다.
-3. 특정 프로젝트를 실행에 옮길 경우에는 브랜치를 새로 만들고, PR Request를 연습하기로 했습니다.
-4. PR을 올릴 경우, Label과 Assignee 등을 붙입니다. 최대한 자세하게 어떤 기능을 구현했는지 작성합니다.
-5. 새로운 프로젝트가 생성되면, 반드시 해당 프로젝트 속의 md 파일과 스터디 리스트를 업데이트합니다.
+1. `폴더 이름과 md 파일`들은 모두 `소문자`로 작성하고, 사이에 "_" 기호를 넣습니다.
+2. `모든 HTML 파일`들은 최대한 `server.py` 파일에서 접근 가능하고, `Web_Study의 index.html 파일`에서 이동하여 실행할 수 있도록 해볼 예정입니다.
+3. 특정 프로젝트를 실행에 옮길 경우에는 브랜치를 새로 만들고, `PR Request`를 연습하기로 했습니다.
+4. `PR`을 올릴 경우, `Label과` `Assignee` 등을 붙입니다. 최대한 자세하게 어떤 기능을 구현했는지 작성합니다.
+5. 새로운 프로젝트가 생성되면, 반드시 해당 프로젝트 속의 `md 파일과 스터디 리스트를 업데이트`합니다.
 
 ## 🔖 스터디 리스트
-- <a href="https://github.com/henryseo1000/Web_Study/tree/main/get_started">GetStarted - 책으로 HTML 복습하기(HTML의 기초)</a>
-- <a href="https://github.com/henryseo1000/Web_Study/tree/main/simple_login">Simple Login - 반응형 로그인 화면 클론코딩</a>
-- <a href="https://github.com/henryseo1000/Web_Study/tree/main/web_compiler">WebCompiler - 웹을 이용한 컴파일 페이지</a>
-- <a href="https://github.com/henryseo1000/Web_Study/tree/main/card_test">CardTest - 자바스크립트와 간단한 CSS로 만든 카드 테스트</a>
-- <a href="https://github.com/henryseo1000/Web_Study/tree/main/chrome_prank">ChromePrank - 자바스크립트로 만든, 장난치기 위해 만든 크롬 확장 프로그램</a>
-- <a href="https://github.com/henryseo1000/Web_Study/tree/main/chrome_todo">ChromeToDo - JS, HTML, CSS로 만든 메모용 크롬 확장 프로그램</a>
+- <a href="https://github.com/henryseo1000/Web_Study/tree/main/templates/get_started">GetStarted - 책으로 HTML 복습하기(HTML의 기초)</a>
+- <a href="https://github.com/henryseo1000/Web_Study/tree/main/templates/simple_login">Simple Login - 반응형 로그인 화면 클론코딩</a>
+- <a href="https://github.com/henryseo1000/Web_Study/tree/main/templates/web_compiler">WebCompiler - 웹을 이용한 컴파일 페이지</a>
+- <a href="https://github.com/henryseo1000/Web_Study/tree/main/templates/card_test">CardTest - 자바스크립트와 간단한 CSS로 만든 카드 테스트</a>
+- <a href="https://github.com/henryseo1000/Web_Study/tree/main/templates/chrome_prank">ChromePrank - 자바스크립트로 만든, 장난치기 위해 만든 크롬 확장 프로그램</a>
+- <a href="https://github.com/henryseo1000/Web_Study/tree/main/templates/chrome_todo">ChromeToDo - JS, HTML, CSS로 만든 메모용 크롬 확장 프로그램</a>
+- <a href="https://github.com/henryseo1000/Web_Study/tree/main/templates/flex_test">FlexTest - JS, HTML, SCSS로 만든 SCSS 테스트 페이지</a>
