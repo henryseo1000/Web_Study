@@ -12,7 +12,7 @@
   <img src="https://github.com/henryseo1000/Web_Study/assets/81693499/2808e8e3-85cd-417c-ae5f-eabca6f06446" style="height: 400px;">
 </center>
 
-## 컨벤션 규칙
+## :smile: 컨벤션 규칙
 > 2024 / 08 / 15 이후로 아래 컨벤션 규칙들을 적용합니다.
 1. 폴더 이름과 md 파일들은 모두 소문자로 작성하고, 사이에 "_" 기호를 넣습니다.
 2. 모든 html 파일들은 최대한 server.py 파일에서 접근 가능하고, Web_Study의 index.html 파일에서 이동하여 실행할 수 있도록 해볼 예정입니다.

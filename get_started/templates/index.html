@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko"> <!--특정 언어로 검색할 경우 필요하다.-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 메타태그를 이용하면 다양한 키워드나 웹 문서에 대한 설명을 붙일 수 있다. -->
+    <meta name="keywords" content="HTML 기본 실습">
+    <meta name="description" content="프론트엔드 실습">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <title>Hello, HTML</title>
+</head>
+
+<body>
+    <h1>웹 개발 기초</h1>
+
+    <hr>
+
+    <p>HTML</p>
+    <p>CSS</p>
+    <p>자바스크립트</p>
+
+    <hr>
+
+    <table>
+        <tr>
+            <td>이름</td>
+            <td>나이</td>
+            <td>성별</td>
+        </tr>
+        <tr>
+            <td>사람 1</td>
+            <td>21</td>
+            <td>남자</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table>
+        <caption>선물용/가정용 상품 구성</caption>
+        <colgroup>
+            <col style="background-color: #eeeeee;">
+            <col span="2" style="width: 150px; background-color:antiquewhite;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>용도</th>
+                <th>중량</th>
+                <th>개수</th>
+                <th>가격</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">선물용</td>
+                <th>3kg</th>
+                <th>11~16과</th>
+                <td>35,000원</td>
+            </tr>
+
+            <tr>
+                <th>3kg</th>
+                <td colspan="2">hello</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">가정용</td>
+                <th>3kg</th>
+                <th>11~16과</th>
+                <td>35,000원</td>
+            </tr>
+
+            <tr>
+                <th>3kg</th>
+                <th>11~16과</th>
+                <td>35,000원</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            상품 구성에 대한 정보
+        </tfoot>
+    </table>
+
+    <a href="semantic-tag" target="_blank">리스트 확인하기</a>
+
+    <hr>
+
+    <div class="input_form">
+        <form autocomplete="off">
+
+            <fieldset>
+                <legend>이름</legend>
+                <label>이름 : <input type="text"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>상세 정보</legend>
+                <label for="details">상세 소개 : </label>
+                <input type="text" id="details">
+                <label><input type="date" min="2020-02-10" max="2020-12-31">생년월일</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Login Form</legend>
+                <label for="id_email">이메일 : <input type="email" id="id_email"></label>
+                <br>
+                <label for="pwd">비밀번호 : <input type="password" id="pwd"></label>
+                <input type="submit" value="로그인">
+            </fieldset>
+
+            <fieldset>
+                <legend>사용자 정보</legend>
+
+                <!-- autofocus 설정을 사용하면 페이지의 원하는 요소에 마우스 커서를 자동으로 표시하도록 함 -->
+                <label><input type="text" autofocus></label>
+                <label><input type="date"></label>
+                <label><input type="month"></label>
+                <label><input type="week"></label>
+
+                <!-- 이미지 버튼의 추가 -->
+                <input type="image" src="../static/free-icon-login-7856337.png" alt="login" style="height: 50px; width: 50px;">
+                <input type="file">
+                <input type="tel">
+                <input type="reset">
+            </fieldset>
+
+            <fieldset>
+                <label><input type="checkbox" value="s_3">선물 포장 3kg</label>
+                <label><input type="checkbox" value="s_4">선물 포장 4kg</label>
+                <label><input type="checkbox" value="s_5">선물 포장 5kg</label>
+                <label><input type="range" min="0" max="50" value="30">개수</label>
+                <hr>
+
+                <!-- textarea를 사용할 경우 가로 너비를 문자로 지정하거나 세로 길이를 줄 단위로 지정하기가 가능하다. -->
+
+                <label for="memo">메시지를 남겨주세요</label>
+                <textarea name="message" id="memo" cols="30" rows="10"></textarea>
+
+                <label for="optlist"></label>
+                <input type="text" id="optlist" list="pack">
+                <datalist id="pack">
+                    <option value="package">
+                        리본으로 예쁘게 묶어 포장하기
+                    </option>
+                    <option value="no_package">
+                        포장따위는 필요 없어욧!
+                    </option>
+                </datalist>
+            </fieldset>
+
+            <button type="submit">제출하기</button>
+            <button type="reset">위 양식 전체 초기화</button>
+            <button type="button">그냥 버튼</button>
+        </form>
+    </div>
+
+</body>
+</html>
