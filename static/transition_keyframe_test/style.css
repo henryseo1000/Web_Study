@@ -1,3 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=New+Amsterdam&display=swap");
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://cdn.pixabay.com/photo/2024/01/25/19/57/man-8532570_1280.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.header span {
+  font-family: "Anek Devanagari";
+  font-size: 50px;
+}
+.header .box {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+  transition: width 1s, height 1s, background-color 2s, transform 2s;
+}
+.header .box:hover {
+  background-color: rgba(128, 128, 128, 0.3);
+  backdrop-filter: blur(10px);
+  width: 100px;
+  height: 100px;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
 
 /*# sourceMappingURL=style.css.map */
