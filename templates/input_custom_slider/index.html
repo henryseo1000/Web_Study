@@ -14,20 +14,38 @@
 </head>
 <body>
     <div class="container">
-        <img 
-            src="{{ url_for('static', filename='input_custom_slider/image.png') }}" 
-            alt="image1"
-            draggable="false"
-        >
-        <div class="slider">
-            <span>01</span>
+        <div class="img_container" id="img_container">
+            <img 
+                src="{{ url_for('static', filename='input_custom_slider/image.png') }}" 
+                alt="image1"
+                draggable="false"
+            >
+            <img 
+                src="{{ url_for('static', filename='input_custom_slider/image.png') }}" 
+                alt="image1"
+                draggable="false"
+            >
+            <img 
+                src="{{ url_for('static', filename='input_custom_slider/image.png') }}" 
+                alt="image1"
+                draggable="false"
+            >
+            <img 
+                src="{{ url_for('static', filename='input_custom_slider/image.png') }}" 
+                alt="image1"
+                draggable="false"
+            >
+        </div>
+        <div class="slider_container" id="slider_container">
+            <span id="current_value"></span>
             <input 
+                id="slider"
                 type="range"
                 value=0
                 min=0
-                max=5
+                max=3
             >
-            <span>05</span>
+            <span id="end_value"></span>
         </div>
     </div>
 </body>
