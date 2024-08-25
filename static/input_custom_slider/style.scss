@@ -18,14 +18,23 @@ body {
     width: 100%;
     gap: 30px;
     user-select: none;
+    overflow: hidden;
 
-    img {
-        aspect-ratio: 4 / 2.5;
-        width: 70%;
-        border-radius: 10px;
+    .img_container {
+        display: flex;
+        flex-direction: row;
+        transition-duration: 1s;
+
+        img {
+            aspect-ratio: 4 / 2.5;
+            width: 70%;
+            margin-left: 15%;
+            margin-right: 15%;
+            border-radius: 10px;
+        }
     }
 
-    .slider {
+    .slider_container {
         display: flex;
         flex-direction: row;
         justify-content: center;
