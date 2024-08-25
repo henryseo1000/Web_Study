@@ -20,7 +20,7 @@
 4. `PR`을 올릴 경우, `Label과` `Assignee` 등을 붙입니다. 최대한 자세하게 어떤 기능을 구현했는지 작성합니다.
 5. 새로운 프로젝트가 생성되면, 반드시 해당 프로젝트 속의 `md 파일과 스터디 리스트를 업데이트`합니다.
 
-## 프로젝트 루트의 폴더 실행
+## 📺프로젝트 루트의 폴더 실행
 > 로직 : 프로젝트 루트 폴더의 server.py를 실행시킨 후 경로를 주면, 해당 경로의 이름에 해당하는 templates 폴더에 가서 index.html을 실행시킵니다.
 
 현재, 몇몇 프로젝트들은 정상적으로 서버에서 실행할 수 없게 되어 있습니다 - 확장 프로그램, 예전에 했던 flask 테스트를 위해 폴더에 app.py가 들어있는 경우
@@ -49,3 +49,4 @@ sudo chmod +x clean.sh make.sh scss.sh
 - <a href="https://github.com/henryseo1000/Web_Study/tree/main/templates/chrome_prank">ChromePrank - 자바스크립트로 만든, 장난치기 위해 만든 크롬 확장 프로그램</a>
 - <a href="https://github.com/henryseo1000/Web_Study/tree/main/templates/chrome_todo">ChromeToDo - JS, HTML, CSS로 만든 메모용 크롬 확장 프로그램</a>
 - <a href="https://github.com/henryseo1000/Web_Study/tree/main/templates/flex_test">FlexTest - JS, HTML, SCSS로 만든 SCSS 테스트 페이지</a>
+- <a href="https://github.com/henryseo1000/Web_Study/tree/main/templates/input_custom_slider">InputCustomSlider - JS, HTML, SCSS로 만든 간단한 슬라이더</a>
