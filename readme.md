@@ -36,7 +36,7 @@ sudo chmod +x clean.sh make.sh scss.sh
 ```shell
 ./make.sh [프로젝트 이름]
 ```
-4. 프로젝트에서 scss.sh를 활용하고 싶은 경우 - static의 프로젝트 폴더에 style.scss 생성 후 아래 명령어 실행
+4. 프로젝트에서 `scss.sh`를 활용하고 싶은 경우 - `static`의 프로젝트 폴더에 `style.scss` 생성 후 아래 명령어 실행
 ```shell
 ./scss.sh [프로젝트 이름]
 ```
