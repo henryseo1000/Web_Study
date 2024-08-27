@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+
+    <meta charset=UTF-8>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='api_request_study/style.css')}}">
+
+    <title>Web Study | By Henry</title>
+</head>
+<body>
+  <form action="/login_req_cookie" method="POST">
+        <p><h3>Enter userID</h3></p>
+        <p><input type = 'text' name = 'id'/></p>
+        <p><input type = 'submit' value = 'Login'/></p>
+  </form>
+</body>
+</html>
+
+<script src="{{ url_for('static', filename='api_request_study/script.js')}}"></script>
