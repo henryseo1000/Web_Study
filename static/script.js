@@ -22,18 +22,18 @@ function addList () {
     for (var i = 0; i < listLength; i++) {
         const addValue = files[i];
 
-        const li = document.createElement("li");
+        const p = document.createElement("p");
         const a = document.createElement("a");
 
-        li.setAttribute('id', addValue);
+        p.setAttribute('id', addValue);
         a.setAttribute('href', "/" + addValue);
 
         const textNode = document.createTextNode(addValue);
         a.appendChild(textNode);
 
-        li.appendChild(a);
+        p.appendChild(a);
 
-        document.getElementById('dir_list').appendChild(li);
+        document.getElementById('dir_list').appendChild(p);
     }
 }
 
