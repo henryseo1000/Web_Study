@@ -17,14 +17,24 @@ body {
     margin-left: 20%;
 
     #title_area {
-        @include justi-align-center;
+        @include align-center;
         position: fixed;
         width: 80%;
         height: 150px;
+        padding: 0px 30px;
+        box-sizing: border-box;
         background: url("./banner.png");
         filter: brightness(0.75);
         color: white;
-        font-size: 50px;
+        font-size: 35px;
+        transition-duration: 0.7s;
+        user-select: none;
+        cursor: pointer;
+
+        b {
+            margin-left: 10px;
+            color: rgb(250, 169, 39);
+        }
     }
 
     #body_area {
