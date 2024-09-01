@@ -3,6 +3,7 @@
 <head>
   <meta charset=UTF-8>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon/favicon.ico') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
   <title>Web Study | By Henry</title>
 </head>
@@ -11,7 +12,7 @@
     <span id="title_area">Welcome To <b>My Web Page!</b></span>
     <div id="body_area">
       <div class="section">
-        <img src="{{ url_for('static', filename='bagel.gif')}}" alt="bagel.gif" draggable="false">
+        <img src="{{ url_for('static', filename='gif/bagel.gif')}}" alt="bagel.gif" draggable="false">
         <span class="section_title">
           I'm Gonna Live My Life, Like I'm Gonna Die Young.
           <p class="section_description">
@@ -77,7 +78,7 @@
   <div id="sidebar">
     <div id="profile_area">
       <img 
-        src="{{ url_for('static', filename='profile.png')}}" 
+        src="{{ url_for('static', filename='img/profile.png')}}" 
         alt="profile_image"
         draggable="false"
       >

@@ -48,8 +48,6 @@ function handleTitleBar () {
     }
 }
 
-console.log(files);
-
 window.onload = addList();
 
 document.addEventListener('scroll', handleTitleBar);

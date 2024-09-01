@@ -23,7 +23,7 @@ body {
   height: 150px;
   padding: 0px 30px;
   box-sizing: border-box;
-  background: url("./banner.png");
+  background: url("./img/banner.png");
   filter: brightness(0.75);
   color: white;
   font-size: 35px;
