@@ -13,6 +13,7 @@ echo "<!DOCTYPE html>\n
 <html lang=\"en\">\n
 <head>\n
     <meta charset="UTF-8">\n
+    <link rel=\"shortcut icon\" href=\"{{ url_for('static', filename='favicon/favicon.ico') }}\">\n
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n
     <link rel=\"stylesheet\" href=\"{{ url_for('static', filename='$1/style.css')}}\">\n
     <title>Web Study | By Henry</title>

@@ -1,14 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset=UTF-8>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="{{ url_for('static', filename='global.css')}}">
-
+  <meta charset=UTF-8>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon/favicon.ico') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
   <title>Web Study | By Henry</title>
 </head>
 <body>
-  <ul id="list"></ul>
+  <div id="main_area">
+    <span id="title_area">Welcome To <b>My Web Page!</b></span>
+    <div id="body_area">
+      <div class="section">
+        <img src="{{ url_for('static', filename='gif/bagel.gif')}}" alt="bagel.gif" draggable="false">
+        <span class="section_title">
+          I'm Gonna Live My Life, Like I'm Gonna Die Young.
+          <p class="section_description">
+            미치도록 살아봅시다.<br>
+            그 어떤 것도 신경쓰지 않고 살 수 있을만큼.<br>
+            <br>
+            모든 것은 다 허무해요.<br>
+            삶에는 이유가 없어요. 그냥 태어난거죠.<br>
+            세상은 그냥 원자, 전자, 쿼크? 이름따윈 모르겠네요.<br>
+            그런 미립자들과 가능성의 파동으로 이루어진 것일 뿐이에요.<br>
+            <br>
+            우리가 하는 모든 생각? 의미 없을지도 몰라요.<br>
+            우리가 하는 모든 행동, 목표?<br>
+            사실 그냥 우리의 뇌가 만들어낸 환상일지도 몰라요.<br>
+            <br>
+            그런데, 그래서요? 그게 모두 사실이라고 해도 뭐 어때요.<br>
+            인생은 허무하니까, 오히려 마음껏 즐기면서 살아도 되는거죠!<br>
+            인생이 항상 행복하단 말은 못해요.<br>
+            인생은 꿈같은 환상과 슬픔, 고통의 반복일지도 몰라요.<br>
+            <br>
+            그러니까 인생이 재미있는 거죠!<br>
+            우리는 항상 어떤 것이든 영원할 것이라고 생각하지만, 영원하지 않아요.<br>
+            행복도 영원할 수는 없죠.<br>
+            그리고 슬픔도 영원할 수 없는거에요!<br>
+            오늘은 어떤 하루가 될까요?<br>
+            기쁜 하루? 슬픈 하루? 짜증나는 하루?<br>
+            상관 없어요. 그냥 인생을 즐겨요.<br>
+            <br>
+            평소에는 관찰해보지도 않았던 꽃을 관찰하고,<br>
+            그냥 일하다가 잠깐 커피 한 잔 사서 주변의 소리에 귀를 기울여도 좋겠죠.<br>
+            바보같이 찌질한 이야기들을 글로 써도 좋고,<br>
+            내일 출근이라도 하고 싶은 일들을 하루쯤 늦게까지 해도 괜찮아요.<br>
+            어쩌라구요. 난 지금 이 순간이 너무너무 소중한데.<br>
+            <br>
+            어떤 영화에서 그랬어요 :<br>
+            인생에서 행복은 한 줌의 시간일 뿐이고,<br>
+            상식이 통하는 것도 아주 잠깐일 뿐이라고.<br>
+            그리고 우리가 세상에서 아무것도 아닌 존재라고 상기시켜주는 무언가가,<br>
+            계속해서 우리 앞에 나타나고 힘 없게 만들지도 몰라요.<br>
+            <br>
+            그런 일들은 계속해서 있어 왔고, 앞으로도 있을거에요.<br>
+            그래도 저는 저만의 방법이 좋아요.<br>
+            제 고집스러운 생각이 좋고, 구석에 박혀서 코딩하고,<br>
+            괴짜같이 컴퓨터와 같은 연구를 하는걸 너무 좋아해요.<br>
+            나중에는 저만의 길을 개척하고, 세상을 바꿀 수 있는 무언가를 만들거에요.<br>
+            <br>
+            중간에 갑자기 무서워져도 괜찮아요.<br>
+            그냥 저는 이게 너무 재미있거든요.<br>
+            중간에 너무 힘들어지고, 무너질 것 같으면 어때요.<br>
+            할 수 있는 데까지 하고, 다시 잠깐 쉬면서 생각을 정리하는 것도 좋거든요.<br>
+            <br>
+            지금 이 글을 보고 있는 누군가에게.<br>
+            무엇을 좋아하나요? 어떤 인생을 살아왔고, 지금은 어떤가요?<br>
+            같이 인생을 즐겨봐요.<br>
+            세상에 있어 우리는 작은 점일 뿐이에요.<br> 
+            그러니까 뭐든 신나게, 마음껏 즐겨도 괜찮다구요.<br>
+          </p>
+        </span>
+      </div>
+    </div>
+  </div>
+  
+  <div id="sidebar">
+    <div id="profile_area">
+      <img 
+        src="{{ url_for('static', filename='img/profile.png')}}" 
+        alt="profile_image"
+        draggable="false"
+      >
+      <span id="description">Hello!<wbr/> My name is Seo Ho Jun!</span>
+    </div>
+    <div id='dir_list'>
+
+    </div>
+  </div>
 </body>
 </html>
 
