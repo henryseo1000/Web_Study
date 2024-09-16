@@ -12,7 +12,8 @@ const files = [
     'simple_ai',
     'simple_login',
     'transition_keyframe_test',
-    'web_compiler'
+    'web_compiler',
+    'event_bubbling'
 ];
 
 var listLength = files.length;
