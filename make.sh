@@ -16,6 +16,7 @@ echo "<!DOCTYPE html>\n
     <link rel=\"shortcut icon\" href=\"{{ url_for('static', filename='favicon/favicon.ico') }}\">\n
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n
     <link rel=\"stylesheet\" href=\"{{ url_for('static', filename='$1/style.css')}}\">\n
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">\n
     <title>Web Study | By Henry</title>
 </head>
 <body>
