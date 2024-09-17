@@ -13,7 +13,8 @@ const files = [
     'simple_login',
     'transition_keyframe_test',
     'web_compiler',
-    'event_bubbling'
+    'event_bubbling',
+    'pixel_art_maker'
 ];
 
 var listLength = files.length;
