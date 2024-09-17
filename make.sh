@@ -11,12 +11,12 @@ touch $1.md index.html
 
 echo "<!DOCTYPE html>\n
 <html lang=\"en\">\n
-<head>\n
-    <meta charset="UTF-8">\n
-    <link rel=\"shortcut icon\" href=\"{{ url_for('static', filename='favicon/favicon.ico') }}\">\n
-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n
-    <link rel=\"stylesheet\" href=\"{{ url_for('static', filename='$1/style.css')}}\">\n
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">\n
+<head>
+    <meta charset="UTF-8">
+    <link rel=\"shortcut icon\" href=\"{{ url_for('static', filename='favicon/favicon.ico') }}\">
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+    <link rel=\"stylesheet\" href=\"{{ url_for('static', filename='$1/style.css')}}\">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <title>Web Study | By Henry</title>
 </head>
 <body>
