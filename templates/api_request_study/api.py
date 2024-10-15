@@ -91,8 +91,12 @@ def deleteMovie():
     
     return movieList;
 
+@app.route("/big") # 경로로 이동할 경우
+def hello_big():
+    return "<h1>hello</h1>"; # hello + h1태그가 포함된 문자열을 얻음
+
 @app.route("/") # 기본 경로로 이동할 경우
-def hello():
+def hello_small():
     return "hello"; # hello 문자열을 얻음
 
 if __name__ == '__main__':  
