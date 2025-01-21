@@ -9,7 +9,7 @@ let isDragging = false;
 let mouseX;
 let mouseY;
 
-const getData = async() => {
+const getData = async () => {
     const res = await fetch("https://sakura-api.onrender.com/cards", {
         method: "GET",
         headers: {
