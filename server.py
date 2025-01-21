@@ -8,8 +8,6 @@ app = Flask("__name__");
 path = "./templates";
 file_list = os.listdir(path);
 
-# print ("file_list: {}".format(file_list));
-
 def redirect_to():
     return url_for('static', filename='favicon/favicon.ico');
 
@@ -31,6 +29,8 @@ class Target:
             self.observer.stop()
             print("Error")
             self.observer.join()
+
+
 
 class Handler(FileSystemEventHandler):
 #FileSystemEventHandler 클래스를 상속받음.
@@ -57,6 +57,10 @@ def index():
 def route(path):
     return render_template("/" + path + "/index.html");
 
+@app.route("/login", methods=['POST'])
+def login():
+    return ""
+
 def watch_file() :
     file_watcher = Target();
     file_watcher.run();
@@ -67,4 +71,4 @@ app.add_url_rule('/favicon.ico', 'redirect_to', redirect_to);
 # thread_1.start();
 
 if __name__ == '__main__':
-   app.run('127.0.0.1', port=5001, debug=True);
+   app.run('0.0.0.0', port=5001, debug=True);

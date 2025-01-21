@@ -14,7 +14,8 @@ const files = [
     'transition_keyframe_test',
     'web_compiler',
     'event_bubbling',
-    'pixel_art_maker'
+    'pixel_art_maker',
+    'css_with_3d'
 ];
 
 var listLength = files.length;
