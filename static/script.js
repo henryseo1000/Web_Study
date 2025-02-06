@@ -15,7 +15,8 @@ const files = [
     'web_compiler',
     'event_bubbling',
     'pixel_art_maker',
-    'css_with_3d'
+    'css_with_3d',
+    'ball_collision'
 ];
 
 var listLength = files.length;
