@@ -50,3 +50,5 @@ sudo chmod +x clean.sh make.sh scss.sh
 - <a href="https://github.com/henryseo1000/Web_Study/tree/main/templates/chrome_todo">ChromeToDo - JS, HTML, CSS로 만든 메모용 크롬 확장 프로그램</a>
 - <a href="https://github.com/henryseo1000/Web_Study/tree/main/templates/flex_test">FlexTest - JS, HTML, SCSS로 만든 SCSS 테스트 페이지</a>
 - <a href="https://github.com/henryseo1000/Web_Study/tree/main/templates/input_custom_slider">InputCustomSlider - JS, HTML, SCSS로 만든 간단한 슬라이더</a>
+- <a href="https://github.com/henryseo1000/Web_Study/tree/main/templates/pixel_art_maker">PixelArtMaker - 픽셀 아트 메이커 클론코딩</a>
+- <a href="https://github.com/henryseo1000/Web_Study/tree/main/templates/transition_keyframe_test">TransitionKeyFrameTest - 간단한 Transition 테스트</a>
