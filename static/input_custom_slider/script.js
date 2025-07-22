@@ -26,5 +26,3 @@ window.onload = function() {
         imgContainer.style.transform = `translateX(-${moveAmount}px)`;
     });
 }
-
-
