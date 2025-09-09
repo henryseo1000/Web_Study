@@ -1,12 +1,17 @@
 import os, time, threading;
-from flask import Flask, render_template, url_for, redirect;
+import smtplib;
+from flask import Flask, render_template, url_for, redirect, request;
 from watchdog.observers import Observer;
 from watchdog.events import FileSystemEventHandler;
+from dotenv import load_dotenv;
+from flask_mail import Message, Mail;
 
 app = Flask("__name__");
 
 path = "./templates";
 file_list = os.listdir(path);
+
+load_dotenv()
 
 def redirect_to():
     return url_for('static', filename='favicon/favicon.ico');
@@ -60,6 +65,27 @@ def route(path):
 @app.route("/login", methods=['POST'])
 def login():
     return ""
+
+@app.route("/email", methods=['POST'])
+def send_email():
+    app.config['MAIL_SERVER'] = 'smtp.gmail.com'
+    app.config['MAIL_PORT'] = 465
+    app.config['MAIL_USERNAME'] = 'henryseo1000@gmail.com'
+    app.config['MAIL_PASSWORD'] = os.getenv("GMAIL_PASSWORD")
+    app.config['MAIL_USE_TLS'] = False
+    app.config['MAIL_USE_SSL'] = True
+
+    try :
+        mail = Mail(app)
+        msg = Message('[이메일 테스트] 안녕하세요!', sender='henryseo1000@gmail.com', recipients=[request.form["customer_email"]])
+        msg.body = '축하합니다! 이 이메일을 받은 당신은 바보입니다!'
+        mail.send(msg)
+
+        return "메일이 성공적으로 전송되었습니다."
+    
+    except:
+        return "문제가 발생했습니다. 다시 시도해주세요."
+
 
 def watch_file() :
     file_watcher = Target();
