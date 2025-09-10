@@ -16,7 +16,8 @@ const files = [
     'event_bubbling',
     'pixel_art_maker',
     'css_with_3d',
-    'ball_collision'
+    'ball_collision',
+    'flask_sending_email_test'
 ];
 
 var listLength = files.length;
